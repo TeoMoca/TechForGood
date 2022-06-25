@@ -35,7 +35,8 @@ body {
   grid-template-areas: "logo-container . title-container";
   grid-area: header;
   padding: 10px 20px;
-  position: relative;
+  position: sticky;
+  top: 0;
   background: inherit;
   z-index: 10;
 }
@@ -66,6 +67,11 @@ body {
 }
 
 .discover {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 0px 0px;
+  grid-template-areas: "description graph";
   grid-area: discover;
 }
 
@@ -78,6 +84,14 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.description {
+  grid-area: description;
+}
+
+.graph {
+  grid-area: graph;
 }
 
 @media (max-width: 800px) {
@@ -117,6 +131,19 @@ body {
   }
 
   .discover {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 0px 0px;
+    grid-template-areas: "description graph";
     grid-area: discover;
+  }
+
+  .description {
+    grid-area: description;
+  }
+
+  .graph {
+    grid-area: graph;
   }
 }
