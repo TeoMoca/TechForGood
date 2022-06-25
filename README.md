@@ -5,7 +5,8 @@ Pour ce Hackathon, on nous demande une application simple et esthétique qui per
 
 Pour notre App, nous avons intégrés les données dans l’outil Tableau afin de rendre nos données exploitables, puis nous avons intégrés nos dashboards dans la web app.
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/5c449f27-c5de-4af8-b581-b5d1c336202d/Untitled.png)
+![image](https://user-images.githubusercontent.com/73824807/175774289-04bac97f-190c-4b1e-8482-f651960c29c2.png)
+
 
 On propose différents affichage, les sommes/moyennes de taux de particules nocives dans l’air comme ci dessus offrent une vue résumée des données.
 
