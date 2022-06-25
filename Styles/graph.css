@@ -11,14 +11,14 @@ body {
 .container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 0.4fr 1.6fr;
+  grid-template-rows: 0.4fr 0.4fr;
   gap: 0px 0px;
   grid-auto-flow: row;
   grid-template-areas:
     "header header header"
     "selector selector selector"
-    "graph graph graph";
-  height: 100vh;
+    "graphes graphes graphes";
+  height: 100%;
   background: linear-gradient(
     160deg,
     rgba(34, 193, 195, 1) 22%,
@@ -80,13 +80,21 @@ body {
   text-align: center;
 }
 
-.graph {
+.graphes {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr;
   gap: 0px 0px;
   grid-template-areas: "graph";
   grid-area: discover;
+}
+
+.polluant {
+  width: 100%;
+}
+
+iframe {
+  border: none;
 }
 
 .logo {
@@ -126,12 +134,19 @@ body {
   margin-left: 20px;
 }
 
-.graph {
-  grid-area: graph;
+.graphes {
+  grid-area: graphes;
+  flex-direction: column;
   padding: 0 30px 0 0;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.polluant {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 0 20px;
 }
 
 .furthermore {
@@ -162,15 +177,17 @@ body {
 
 @media (max-width: 800px) {
   .container {
+    position: unset;
     display: grid;
+    height: 100%;
     grid-template-columns: 1fr;
-    grid-template-rows: 0.8fr 1.2fr 1fr;
+    grid-template-rows: 0.8fr 0.4fr 1fr;
     gap: 0px 0px;
     grid-auto-flow: row;
     grid-template-areas:
       "header"
-      "discover"
-      ".";
+      "selector"
+      "graphes";
   }
 
   .header {
@@ -188,6 +205,7 @@ body {
 
   .title-container {
     grid-area: title-container;
+    justify-content: center;
   }
 
   .logo-container {
@@ -196,20 +214,28 @@ body {
     justify-content: center;
   }
 
-  .discover {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr;
-    gap: 0px 0px;
-    grid-template-areas: "description graph";
-    grid-area: discover;
-  }
-
   .description {
     grid-area: description;
   }
 
-  .graph {
-    grid-area: graph;
+  .selector select {
+    margin-top: 15px;
+  }
+
+  .polluant {
+    flex-direction: row;
+  }
+
+  iframe {
+    width: 400px !important;
+  }
+
+  .graphes {
+    grid-area: graphes;
+    flex-direction: column;
+    padding: 0 30px 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 }

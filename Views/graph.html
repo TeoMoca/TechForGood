@@ -7,31 +7,34 @@
     <link rel="stylesheet" href="../Styles/graph.css"></link>
     <title>Découvrir les polluants</title>
   </head>
-  <script>function changeGraph(value){
+  <script>function changeGraph(selector){
     const container = document.querySelector(".graphes");
     var newGraphes = `        <div class="polluant left">
-        <iframe width="800" height="400" src="https://public.tableau.com/views/test_16561097589390/dashlimit?Nom%20Poll=CO&Nom%20Station=${value}&:embed=true&:showVizHome=no&:toolbar=no"></iframe>
-    </div>
+        <iframe width="800" height="400" src="https://public.tableau.com/views/test_16561097589390/dashlimit?Nom%20Poll=CO&Nom%20Station=${selector.value}&:embed=true&:showVizHome=no&:toolbar=no"></iframe>
+        <div><h2>titre du polluant</h2><p>Description du polluant</p></div>
+        </div>
     <div class="polluant right">
-        <iframe width="800" height="400" src="https://public.tableau.com/views/test_16561097589390/dashlimit?Nom%20Poll=SO2&Nom%20Station=${value}&:embed=true&:showVizHome=no&:toolbar=no"></iframe>
+        <iframe width="800" height="400" src="https://public.tableau.com/views/test_16561097589390/dashlimit?Nom%20Poll=SO2&Nom%20Station=${selector.value}&:embed=true&:showVizHome=no&:toolbar=no"></iframe>
     </div>
     <div class="polluant left">
-        <iframe width="800" height="400" src="https://public.tableau.com/views/test_16561097589390/dashlimit?Nom%20Poll=NO2&Nom%20Station=${value}&:embed=true&:showVizHome=no&:toolbar=no"></iframe>
-    </div>
+        <iframe width="800" height="400" src="https://public.tableau.com/views/test_16561097589390/dashlimit?Nom%20Poll=NO2&Nom%20Station=${selector.value}&:embed=true&:showVizHome=no&:toolbar=no"></iframe>
+        <div><h2>titre du polluant</h2><p>Description du polluant</p></div>
+        </div>
     <div class="polluant right">
-        <iframe width="800" height="400" src="https://public.tableau.com/views/test_16561097589390/dashlimit?Nom%20Poll=NO&Nom%20Station=${value}&:embed=true&:showVizHome=no&:toolbar=no"></iframe>
+        <iframe width="800" height="400" src="https://public.tableau.com/views/test_16561097589390/dashlimit?Nom%20Poll=NO&Nom%20Station=${selector.value}&:embed=true&:showVizHome=no&:toolbar=no"></iframe>
     </div>
     <div class="polluant left">
-        <iframe width="800" height="400" src="https://public.tableau.com/views/test_16561097589390/dashlimit?Nom%20Poll=C6H6&Nom%20Station=${value}&:embed=true&:showVizHome=no&:toolbar=no"></iframe>
-    </div>
+        <iframe width="800" height="400" src="https://public.tableau.com/views/test_16561097589390/dashlimit?Nom%20Poll=C6H6&Nom%20Station=${selector.value}&:embed=true&:showVizHome=no&:toolbar=no"></iframe>
+        <div><h2>titre du polluant</h2><p>Description du polluant</p></div>
+        </div>
     <div class="polluant right">
-        <iframe width="800" height="400" src="https://public.tableau.com/views/test_16561097589390/dashlimit?Nom%20Poll=PM10&Nom%20Station=${value}&:embed=true&:showVizHome=no&:toolbar=no"></iframe>
+        <iframe width="800" height="400" src="https://public.tableau.com/views/test_16561097589390/dashlimit?Nom%20Poll=PM10&Nom%20Station=${selector.value}&:embed=true&:showVizHome=no&:toolbar=no"></iframe>
     </div>
     <div class="polluant left">
-        <iframe width="800" height="400" src="https://public.tableau.com/views/test_16561097589390/dashlimit?Nom%20Poll=PM2.5&Nom%20Station=${value}&:embed=true&:showVizHome=no&:toolbar=no"></iframe>
-    </div>
+        <iframe width="800" height="400" src="https://public.tableau.com/views/test_16561097589390/dashlimit?Nom%20Poll=PM2.5&Nom%20Station=${selector.value}&:embed=true&:showVizHome=no&:toolbar=no"></iframe>
+        <div><h2>titre du polluant</h2><p>Description du polluant</p></div>
+        </div>
     `;
-    console.log("coucuo");
     container.innerHTML="";
     container.innerHTML=newGraphes;
 }</script>
@@ -48,71 +51,78 @@
         </div>
       </div>
       <div class="selector">
-        <select>
-            <option onclick="changeGraph(this.value)" value="" disabled selected>--Nom De la Station--</option>
-            <option onclick="changeGraph(this.value)" value="ALEN_MET">ALEN_MET</option>
-            <option onclick="changeGraph(this.value)" value="BUR">BUR</option>
-            <option onclick="changeGraph(this.value)" value="CAEN_CHV">CAEN_CHV</option>
-            <option onclick="changeGraph(this.value)" value="CAEN_IFS">CAEN_IFS</option>
-            <option onclick="changeGraph(this.value)" value="CAEN_VAU">CAEN_VAU</option>
-            <option onclick="changeGraph(this.value)" value="CAU">CAU</option>
-            <option onclick="changeGraph(this.value)" value="CHER_HDV">CHER_HDV</option>
-            <option onclick="changeGraph(this.value)" value="CHER_POR">CHER_POR</option>
-            <option onclick="changeGraph(this.value)" value="CHS">CHS</option>
-            <option onclick="changeGraph(this.value)" value="CLR">CLR</option>
-            <option onclick="changeGraph(this.value)" value="DIG">DIG</option>
-            <option onclick="changeGraph(this.value)" value="DIP">DIP</option>
-            <option onclick="changeGraph(this.value)" value="EVT">EVT</option>
-            <option onclick="changeGraph(this.value)" value="FEC">FEC</option>
-            <option onclick="changeGraph(this.value)" value="GCM">GCM</option>
-            <option onclick="changeGraph(this.value)" value="GOR">GOR</option>
-            <option onclick="changeGraph(this.value)" value="HAR">HAR</option>
-            <option onclick="changeGraph(this.value)" value="HONFLEUR">HONFLEUR</option>
-            <option onclick="changeGraph(this.value)" value="HRI">HRI</option>
-            <option onclick="changeGraph(this.value)" value="HVH">HVH</option>
-            <option onclick="changeGraph(this.value)" value="JUS">JUS</option>
-            <option onclick="changeGraph(this.value)" value="LFP">LFP</option>
-            <option onclick="changeGraph(this.value)" value="LISIEUX">LISIEUX</option>
-            <option onclick="changeGraph(this.value)" value="LMI">LMI</option>
-            <option onclick="changeGraph(this.value)" value="MAS">MAS</option>
-            <option onclick="changeGraph(this.value)" value="MEN">MEN</option>
-            <option onclick="changeGraph(this.value)" value="MERA">MERA</option>
-            <option onclick="changeGraph(this.value)" value="MOULT_PROX">MOULT_PROX</option>
-            <option onclick="changeGraph(this.value)" value="MPB">MPB</option>
-            <option onclick="changeGraph(this.value)" value="ND2">ND2</option>
-            <option onclick="changeGraph(this.value)" value="OUISTREH">OUISTREH</option>
-            <option onclick="changeGraph(this.value)" value="POS">POS</option>
-            <option onclick="changeGraph(this.value)" value="QDP">QDP</option>
-            <option onclick="changeGraph(this.value)" value="QUI">QUI</option>
-            <option onclick="changeGraph(this.value)" value="ROM">ROM</option>
-            <option onclick="changeGraph(this.value)" value="SRC">SRC</option>
-            <option onclick="changeGraph(this.value)" value="STA">STA</option>
-            <option onclick="changeGraph(this.value)" value="STLO_EGL">STLO_EGL</option>
-            <option onclick="changeGraph(this.value)" value="SUD3">SUD3</option>
-            <option onclick="changeGraph(this.value)" value="TAN">TAN</option>
+        <select onchange="console.log(this);changeGraph(this)">
+            <option value="" disabled selected>--Nom De la Station--</option>
+            <option value="ALEN&#x5FMET">ALEN_MET</option>
+            <option value="BUR">BUR</option>
+            <option value="CAEN&#x5FCHV">CAEN_CHV</option>
+            <option value="CAEN&#x5FIFS">CAEN_IFS</option>
+            <option value="CAEN&#x5FVAU">CAEN_VAU</option>
+            <option value="CAU">CAU</option>
+            <option value="CHER&#x5FHDV">CHER_HDV</option>
+            <option value="CHER&#x5FPOR">CHER_POR</option>
+            <option value="CHS">CHS</option>
+            <option value="CLR">CLR</option>
+            <option value="DIG">DIG</option>
+            <option value="DIP">DIP</option>
+            <option value="EVT">EVT</option>
+            <option value="FEC">FEC</option>
+            <option value="GCM">GCM</option>
+            <option value="GOR">GOR</option>
+            <option value="HAR">HAR</option>
+            <option value="HONFLEUR">HONFLEUR</option>
+            <option value="HRI">HRI</option>
+            <option value="HVH">HVH</option>
+            <option value="JUS">JUS</option>
+            <option value="LFP">LFP</option>
+            <option value="LISIEUX">LISIEUX</option>
+            <option value="LMI">LMI</option>
+            <option value="MAS">MAS</option>
+            <option value="MEN">MEN</option>
+            <option value="MERA">MERA</option>
+            <option value="MOULT&#x5FPROX">MOULT_PROX</option>
+            <option value="MPB">MPB</option>
+            <option value="ND2">ND2</option>
+            <option value="OUISTREH">OUISTREH</option>
+            <option value="POS">POS</option>
+            <option value="QDP">QDP</option>
+            <option value="QUI">QUI</option>
+            <option value="ROM">ROM</option>
+            <option value="SRC">SRC</option>
+            <option value="STA">STA</option>
+            <option value="STLO&#x5FEGL">STLO_EGL</option>
+            <option value="SUD3">SUD3</option>
+            <option value="TAN">TAN</option>
         </select>
     </div>
     <div class="graphes">
         <div class="polluant left">
             <iframe width="800" height="400" src="https://public.tableau.com/views/test_16561097589390/dashlimit?Nom%20Poll=CO&Nom%20Station=SUD3&:embed=true&:showVizHome=no&:toolbar=no"></iframe>
+            <div><h2>titre du polluant</h2><p>Description du polluant</p></div>
         </div>
         <div class="polluant right">
+            <div><h2>titre du polluant</h2><p>Description du polluant</p></div>
             <iframe width="800" height="400" src="https://public.tableau.com/views/test_16561097589390/dashlimit?Nom%20Poll=NO&Nom%20Station=SUD3&:embed=true&:showVizHome=no&:toolbar=no"></iframe>
         </div>
         <div class="polluant left">
             <iframe width="800" height="400" src="https://public.tableau.com/views/test_16561097589390/dashlimit?Nom%20Poll=NO2&Nom%20Station=SUD3&:embed=true&:showVizHome=no&:toolbar=no"></iframe>
+            <div><h2>titre du polluant</h2><p>Description du polluant</p></div>
         </div>
         <div class="polluant right">
+            <div><h2>titre du polluant</h2><p>Description du polluant</p></div>
             <iframe width="800" height="400" src="https://public.tableau.com/views/test_16561097589390/dashlimit?Nom%20Poll=O3&Nom%20Station=SUD3&:embed=true&:showVizHome=no&:toolbar=no"></iframe>
         </div>
         <div class="polluant left">
             <iframe width="800" height="400" src="https://public.tableau.com/views/test_16561097589390/dashlimit?Nom%20Poll=PM2&#x2e5&Nom%20Station=SUD3&:embed=true&:showVizHome=no&:toolbar=no"></iframe>
+            <div><h2>titre du polluant</h2><p>Description du polluant</p></div>
         </div>
         <div class="polluant right">
+            <div><h2>titre du polluant</h2><p>Description du polluant</p></div>
             <iframe width="800" height="400" src="https://public.tableau.com/views/test_16561097589390/dashlimit?Nom%20Poll=PM10&Nom%20Station=SUD3&:embed=true&:showVizHome=no&:toolbar=no"></iframe>
         </div>
         <div class="polluant left">
             <iframe width="800" height="400" src="https://public.tableau.com/views/test_16561097589390/dashlimit?Nom%20Poll=SO2&Nom%20Station=SUD3&:embed=true&:showVizHome=no&:toolbar=no"></iframe>
+            <div><h2>titre du polluant</h2><p>Description du polluant</p></div>
         </div>
     </div>
     </div>

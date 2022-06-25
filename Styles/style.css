@@ -26,6 +26,10 @@ body {
   row-gap: 20px;
 }
 
+iframe {
+  border: none;
+}
+
 .header {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -150,13 +154,12 @@ body {
   .container {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 0.8fr 1.2fr 1fr;
+    grid-template-rows: 0.8fr 1.2fr;
     gap: 0px 0px;
     grid-auto-flow: row;
     grid-template-areas:
       "header"
-      "discover"
-      ".";
+      "discover";
   }
 
   .header {
@@ -184,10 +187,10 @@ body {
 
   .discover {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
     gap: 0px 0px;
-    grid-template-areas: "description graph";
+    grid-template-areas: "description" " graph";
     grid-area: discover;
   }
 
@@ -197,5 +200,14 @@ body {
 
   .graph {
     grid-area: graph;
+    padding: 0;
+  }
+
+  .title-container {
+    justify-content: center;
+  }
+  iframe {
+    width: 100% !important;
+    padding: 0px;
   }
 }
