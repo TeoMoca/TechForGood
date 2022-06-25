@@ -69,6 +69,15 @@ body {
 
 .selector {
   grid-area: selector;
+  display: flex;
+  justify-content: center;
+}
+
+.selector select {
+  height: 50px;
+  width: 200px;
+  border-radius: 15px;
+  text-align: center;
 }
 
 .graph {
