@@ -1,0 +1,66 @@
+body {
+  margin: 0;
+  font-family: Main;
+}
+
+@font-face {
+  font-family: Main;
+  src: url(../fonts/Sansita-Regular.ttf);
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 0.4fr 1.6fr 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "header header header"
+    "discover discover discover"
+    ". . .";
+  height: 100vh;
+}
+
+.header {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas: "logo-container . title-container";
+  grid-area: header;
+  padding: 10px 20px;
+  background: red;
+}
+
+.logo-container {
+  grid-area: logo-container;
+}
+
+.title-container {
+  grid-area: title-container;
+}
+
+.logo-container {
+  gap: 10px;
+}
+
+.discover {
+  grid-area: discover;
+  background: linear-gradient(
+    160deg,
+    rgba(34, 193, 195, 1) 22%,
+    rgba(37, 14, 252, 1) 57%
+  );
+}
+
+.logo {
+  max-width: 100px;
+  height: auto;
+}
+
+.title-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
