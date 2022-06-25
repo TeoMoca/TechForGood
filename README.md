@@ -14,8 +14,9 @@ Ci dessous on peut appercevoir sur 3 jours le taux maximal/jour de particules no
 
 On peut filtrer par type de pollution et par poste de mesure.
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/0f47e54a-7aa6-426b-a3db-e66223a3ab1a/Untitled.png)
+![image](https://user-images.githubusercontent.com/73824807/175774315-6c2eb755-6a95-40bb-91f4-497020797139.png)
 
 On a aussi un affichage en carte de disponible, pas encore implémenté dans le site, cependant la vidéo Demo_affichage_carte.mp4. On affiche en rouge les points qui ont eu trop de mesures dépassant le seuil recommandé par l’OMS afin de les mettre en évidences.
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/9bb4ec4c-3236-4168-852c-1a5d2d3a7e51/Untitled.png)
+![image](https://user-images.githubusercontent.com/73824807/175774355-68cc1f3f-5401-44e6-b540-94d6436af132.png)
+
