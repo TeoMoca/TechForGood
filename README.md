@@ -3,7 +3,7 @@ Dans ce cadre, il est proposé un défi sur le thème de la qualité de l’air�
 
 Pour ce Hackathon, on nous demande une application simple et esthétique qui permet à un usager de comprendre facilement les informations communiquées. Cette application sera proposée pour être intégrée à la plateforme open data de la Métropole Rouen Normandie.
 
-Pour notre App, nous avons intégrés les données dans l’outil Tableau afin de rendre nos données exploitables, puis nous avons intégrés nos dashboards dans la web app.
+Pour notre App, nous avons intégré les données dans l’outil Tableau afin de rendre nos données exploitables, puis nous avons intégré nos dashboards dans la web app.
 
 ![image](https://user-images.githubusercontent.com/73824807/175774289-04bac97f-190c-4b1e-8482-f651960c29c2.png)
 
