@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../Styles/graph.css"></link>
+    <link rel="stylesheet" href="./Styles/graph.css"></link>
     <title>Découvrir les polluants</title>
   </head>
   <script>function changeGraph(selector){
@@ -43,16 +43,15 @@
     <div class="container">
       <div class="header">
         <div class="logo-container">
-          <img class="logo" src="../Assets/Métropole_Rouen_Normandie.png " />
-          <img class="logo" src="../Assets/atmo.png " />
+          <img class="logo" src="./Assets/Métropole_Rouen_Normandie.png " />
+          <img class="logo" src="./Assets/atmo.png " />
         </div>
         <div class="title-container">
-          <h1>Rouen Track'Air</h1>
+          <h1 onclick="window.location.href = './graph.html'">Rouen Track'Air</h1>
         </div>
       </div>
       <div class="selector">
-        <select onchange="console.log(this);changeGraph(this)">
-            <option value="" disabled selected>--Nom De la Station--</option>
+        <select onchange="changeGraph(this)">
             <option value="ALEN&#x5FMET">ALEN_MET</option>
             <option value="BUR">BUR</option>
             <option value="CAEN&#x5FCHV">CAEN_CHV</option>
@@ -91,7 +90,7 @@
             <option value="SRC">SRC</option>
             <option value="STA">STA</option>
             <option value="STLO&#x5FEGL">STLO_EGL</option>
-            <option value="SUD3">SUD3</option>
+            <option selected value="SUD3">SUD3</option>
             <option value="TAN">TAN</option>
         </select>
     </div>
