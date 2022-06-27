@@ -9,31 +9,34 @@
   </head>
   <script>function changeGraph(selector){
     const container = document.querySelector(".graphes");
-    var newGraphes = `        <div class="polluant left">
-        <iframe width="800" height="400" src="https://public.tableau.com/views/test_16561097589390/dashlimit?Nom%20Poll=CO&Nom%20Station=${selector.value}&:embed=true&:showVizHome=no&:toolbar=no"></iframe>
-        <div><h2>titre du polluant</h2><p>Description du polluant</p></div>
+    var newGraphes = `                <div class="polluant left">
+            <iframe width="800" height="400" src="https://public.tableau.com/views/test_16561097589390/dashlimit?Nom%20Poll=CO&Nom%20Station=${selector.value}&:embed=true&:showVizHome=no&:toolbar=no"></iframe>
+            <div><h2>Le monoxyde de carbone (CO)</h2><p>Gaz incolore, inodore, toxique et potentiellement mortel qui résulte d’une combustion incomplète, et ce quel que soit le combustible utilisé : bois, butane, charbon, essence, fuel, gaz naturel, pétrole, propane. Il diffuse très vite dans l’environnement.</p></div>
         </div>
-    <div class="polluant right">
-        <iframe width="800" height="400" src="https://public.tableau.com/views/test_16561097589390/dashlimit?Nom%20Poll=SO2&Nom%20Station=${selector.value}&:embed=true&:showVizHome=no&:toolbar=no"></iframe>
-    </div>
-    <div class="polluant left">
-        <iframe width="800" height="400" src="https://public.tableau.com/views/test_16561097589390/dashlimit?Nom%20Poll=NO2&Nom%20Station=${selector.value}&:embed=true&:showVizHome=no&:toolbar=no"></iframe>
-        <div><h2>titre du polluant</h2><p>Description du polluant</p></div>
+        <div class="polluant right">
+            <div><h2>Le monoxyde d'azote (NO)</h2><p>Le monoxyde d'azote fait partie des oxydes d'azote (NOx), ils sont émis lors de la combustion (chauffage, production d’électricité, moteurs thermiques des véhicules…).le NOx est crée a cause des engrais azotés et aussi les émissions d’origine humaine.</p></div>
+            <iframe width="800" height="400" src="https://public.tableau.com/views/test_16561097589390/dashlimit?Nom%20Poll=NO&Nom%20Station=${selector.value}&:embed=true&:showVizHome=no&:toolbar=no"></iframe>
         </div>
-    <div class="polluant right">
-        <iframe width="800" height="400" src="https://public.tableau.com/views/test_16561097589390/dashlimit?Nom%20Poll=NO&Nom%20Station=${selector.value}&:embed=true&:showVizHome=no&:toolbar=no"></iframe>
-    </div>
-    <div class="polluant left">
-        <iframe width="800" height="400" src="https://public.tableau.com/views/test_16561097589390/dashlimit?Nom%20Poll=C6H6&Nom%20Station=${selector.value}&:embed=true&:showVizHome=no&:toolbar=no"></iframe>
-        <div><h2>titre du polluant</h2><p>Description du polluant</p></div>
+        <div class="polluant left">
+            <iframe width="800" height="400" src="https://public.tableau.com/views/test_16561097589390/dashlimit?Nom%20Poll=NO2&Nom%20Station=${selector.value}&:embed=true&:showVizHome=no&:toolbar=no"></iframe>
+            <div><h2>Le dioxyde d'azote (NO2)</h2><p>Le dioxyde d'azote fait partie des oxydes d'azote (NOx), ils sont émis lors de la combustion (chauffage, production d’électricité, moteurs thermiques des véhicules…).le NOx est crée a cause des engrais azotés et aussi les émissions d’origine humaine.</p></div>
         </div>
-    <div class="polluant right">
-        <iframe width="800" height="400" src="https://public.tableau.com/views/test_16561097589390/dashlimit?Nom%20Poll=PM10&Nom%20Station=${selector.value}&:embed=true&:showVizHome=no&:toolbar=no"></iframe>
-    </div>
-    <div class="polluant left">
-        <iframe width="800" height="400" src="https://public.tableau.com/views/test_16561097589390/dashlimit?Nom%20Poll=PM2.5&Nom%20Station=${selector.value}&:embed=true&:showVizHome=no&:toolbar=no"></iframe>
-        <div><h2>titre du polluant</h2><p>Description du polluant</p></div>
+        <div class="polluant right">
+            <div><h2>L'ozone (O3)</h2><p>Gaz indispensable à la vie terrestre. Naturellement présent dans l’atmosphère, il forme une couche dans la stratosphère (de 12 à 50 km au-dessus du sol), qui protège des rayons ultraviolets (plus de 97 % des rayons ultraviolets sont interceptés par cette couche). Dans les basses couches de l’atmosphère (troposphère, de 0 à 12 km au-dessus du sol), l’ozone est en revanche un polluant atmosphérique nocif pour la santé humaine, les animaux et les végétaux, à cause de son caractère oxydant.</p></div>
+            <iframe width="800" height="400" src="https://public.tableau.com/views/test_16561097589390/dashlimit?Nom%20Poll=O3&Nom%20Station=${selector.value}&:embed=true&:showVizHome=no&:toolbar=no"></iframe>
         </div>
+        <div class="polluant left">
+            <iframe width="800" height="400" src="https://public.tableau.com/views/test_16561097589390/dashlimit?Nom%20Poll=PM2&#x2e5&Nom%20Station=${selector.value}&:embed=true&:showVizHome=no&:toolbar=no"></iframe>
+            <div><h2>Les PM 2.5</h2><p>Particules de diamètre inférieur à 2,5 micromètres. Elles pénètrent profondément dans l’appareil respiratoire jusqu’aux alvéoles pulmonaires et peuvent passer dans la circulation sanguine.</p></div>
+        </div>
+        <div class="polluant right">
+            <div><h2>Les PM 10</h2><p>Particules de diamètre inférieur à 10 micromètres. Elles sont retenues au niveau du nez et des voies aériennes supérieures.</p></div>
+            <iframe width="800" height="400" src="https://public.tableau.com/views/test_16561097589390/dashlimit?Nom%20Poll=PM10&Nom%20Station=${selector.value}&:embed=true&:showVizHome=no&:toolbar=no"></iframe>
+        </div>
+        <d$ class="polluant left">
+            <iframe width="800" height="400" src="https://public.tableau.com/views/test_16561097589390/dashlimit?Nom%20Poll=SO2&Nom%20Station=${selector.value}&:embed=true&:showVizHome=no&:toolbar=no"></iframe>
+            <div><h2>Le dioxyde de soufre (SO2)</h2><p>Gaz incolore, dense et toxique, dont l'inhalation est fortement irritante. Il est libéré dans l'atmosphère terrestre par les volcans et par de nombreux procédés industriels, ainsi que par la combustion de certains charbons, pétroles et gaz naturels non désulfurés.</p></div>
+        </d${selector.value}
     `;
     container.innerHTML="";
     container.innerHTML=newGraphes;
